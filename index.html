@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto vilões JoJo</title>
+    <link rel="shortcut icon" href="src/imagens/faviconj.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <main>
+        <section id="telefone">
+            <!-- Iframe para mostrar o conteúdo -->
+            <iframe src="home.html" frameborder="0" name="tela" id="tela">
+                Seu navegador não é compatível com isso
+            </iframe>
+        </section>
+
+        <section id="viloes-jojo">
+            <!-- Imagens com eventos de clique -->
+            <img src="src/imagens/logo-home.jpg" alt="Home" onclick="trocarVideo('home.html')"><br>
+            <img src="src/imagens/DioBrando.png" alt="Dio" onclick="trocarVideo('src/vilões/dio.html')"><br>
+            <img src="src/imagens/Karssun.png" alt="Kars" onclick="trocarVideo('src/vilões/kars.html')"><br>
+            <img src="src/imagens/Kira3rdform.png" alt="Yoshikage Kira" onclick="trocarVideo('src/vilões/kira.html')"><br>
+            <img src="src/imagens/Diavolo.png" alt="Diavolo" onclick="trocarVideo('src/vilões/diavolo.html')"><br>
+            <img src="src/imagens/Pucci1.png" alt="Pucci" onclick="trocarVideo('src/vilões/pucci.html')"><br>
+            <img src="src/imagens/valentine.png" alt="Funny Valentine" onclick="trocarVideo('src/vilões/valentine.html')"><br>
+            <img src="src/imagens/tooru.jpeg" alt="Tooru" onclick="trocarVideo('src/vilões/tooru.html')"><br>
+        </section>
+    </main>
+
+    <!-- Adicionar JavaScript -->
+    <script>
+        // Função para trocar o conteúdo do iframe
+        function trocarVideo(novoSrc) {
+            const iframe = document.getElementById('tela'); // Seleciona o iframe
+            iframe.src = novoSrc; // Atualiza o atributo src do iframe
+        }
+    </script>
+</body>
+</html>
